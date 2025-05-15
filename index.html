@@ -1,0 +1,33 @@
+<head>
+    <title></title>
+    <link rel="stylesheet" media="screen and (min-width: 1024px)" href="styles/style-desktop.css">
+    <link rel="stylesheet" media="screen" href="styles/style-mobile.css">
+</head>
+<html>
+    <body>
+        <header class="header-container">
+            <nav class="navigation">
+                <ul class="menu-list" style="list-style: none;">
+                    <!-- <li><button class="menuButton"></button></li> -->
+                    <!-- <li><button class="menuButton"></button></li> -->
+                    <!-- <li><button class="menuButton"></button></li> -->
+                </ul>
+            </nav>
+        </header>
+        <main class="main-container">
+            <div class="mainBox">
+                <div class="calcText">
+                    <div class="textIn"><p id="pTextIn" class="pTextIn">1+2/2</p></div>
+                </div>
+                <div class="calcPad">
+                    <button onclick="inputClear()" class="calcButton">С</button><button class="calcButton">()</button><button class="calcButton">%</button><button onclick="input('/')" class="calcButton">/</button>
+                    <button onclick="input(7)" class="calcButton">7</button><button onclick="input(8)" class="calcButton">8</button><button onclick="input(9)" class="calcButton">9</button><button onclick="input('*')" class="calcButton">X</button>
+                    <button onclick="input(4)" class="calcButton">4</button><button onclick="input(5)" class="calcButton">5</button><button onclick="input(6)" class="calcButton">6</button><button onclick="input('-')" class="calcButton">-</button>
+                    <button onclick="input(1)" class="calcButton">1</button><button onclick="input(2)" class="calcButton">2</button><button onclick="input(3)" class="calcButton">3</button><button onclick="input('+')" class="calcButton">+</button>
+                    <button style="grid-area: 5 / 4;" onclick="returnInput()" class="calcButton">=</button><button onclick="deleteLast()" class="calcButton">delete</button>
+                </div>
+            </div>
+        </main>
+        <script src="js/js.js"></script>
+    </body>
+</html>

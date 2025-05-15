@@ -1,0 +1,13 @@
+:root{
+    --main-color: rgb(32, 42, 61);
+    --secondary-color: rgb(21, 36, 36);
+}
+html {
+    font-size: 16px;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--main-color);
+    transition: all 0.3 ease;
+}

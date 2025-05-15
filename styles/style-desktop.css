@@ -1,0 +1,119 @@
+:root{
+    --main-color: rgb(32, 42, 61);
+    --secondary-color: rgb(21, 36, 36);
+}
+html {
+    font-size: 16px;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--main-color);
+    transition: all 0.3s ease;
+}
+.header-container{
+    width: 100%;
+    height: 6rem;
+    background-color: var(--secondary-color);
+    border-radius: 0px 0px 10px 10px;
+}
+.menu-list{
+    display: flex;
+    gap: 1rem;
+    padding: 0;
+}
+.navigation{
+    display: flex;
+    background-color: rgb(22, 37, 63);
+    align-items: center;
+    justify-content: center;
+    height: 4rem;
+    border-radius: 0px 0px 15px 15px;
+}
+.menuButton{
+    list-style: none;
+    cursor: pointer;
+    width: 4rem;
+    height: 2rem;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    background-color: rgb(118, 118, 253);
+    box-shadow: 0px 2px 8px black;
+}
+.menuButton:hover{
+    transform: scale(1.02);
+}
+.menuButton:active{
+    background-color: rgb(0, 119, 255);
+    transform: scale(0.98);
+}
+.main-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5rem;
+    row-gap: 1rem;
+}
+.mainBox{
+    display: grid;
+    padding: 0.5rem;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 1rem;
+    background-color: var(--secondary-color);
+    max-width: 500px;
+    margin: 0 auto;
+    width: 50rem;
+    height: 40rem;
+    border-radius: 15px;
+}
+.calcText{
+    grid-area: 1 / 1 / 2 / 6;
+    background-color: var(--main-color);
+    border-radius: 15px;
+}
+.textIn{
+    height: 5.5rem;
+    width: 30.5rem;
+    background-color: var(--secondary-color);
+    margin: 0.4rem auto;
+    color: white;
+    align-content: center;
+    justify-content: center;
+    font-size: 2rem;
+    border-radius: 15px;
+}
+.pTextIn{
+    color: white;
+    margin: 0 auto;
+    text-align: right;
+    padding-right: 1rem;
+}
+.calcPad{
+    grid-area: 2 / 1 / 7 / 6;
+    display: grid;
+    grid-column-gap: 0.5rem;
+    grid-row-gap: 0.5rem;
+    padding: 0.5rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    background-color: var(--main-color);
+    border-radius: 15px;
+}
+.calcButton{
+    background-color: var(--secondary-color);
+    color: white;
+    border-radius: 15px;
+    border-style: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-size: 2rem;
+}
+.calcButton:hover{
+    transform: scale(1.02);
+}
+.calcButton:active{
+    transform: scale(0.96);
+}
