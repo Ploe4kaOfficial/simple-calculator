@@ -1,5 +1,5 @@
 'usestrict';
-let lastSym=0;
+let lastSym=1;
 function input(input){
     if((input=='+'||input=='-'||input=='*'||input=='/') && lastSym==1){
         document.getElementById('pTextIn').innerText = (document.getElementById('pTextIn').innerText).slice(0, -1)+input;
